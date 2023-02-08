@@ -1,26 +1,28 @@
+
+#importing all the information from the computer file
 from computer import *
 
+#This class is for the Resale Shop
 class ResaleShop:
 
-    # What attributes will it need?
+    # Attributes: this attribute creates the inventory as a list
     inventory: list
 
-    # How will you set up your constructor?
+    # Constructor: this constructor takes in the inventory as a list
 
     def __init__(self) -> None:
         self.inventory = []
 
-    # Remember: in python, all constructors have the same name (__init__)
-    #def __init__():
-    #pass # You'll remove this when you fill out your constructor
+    # Methods: Buy, Sell, Print Inventory, Refurbish
 
-    # What methods will you need?
+    #(self) is reference to the blueprint of def buyComp
+    # Takes in parameters containing all the information about a computer adds it to the inventory and append adds c to the end of self.invetory list
 
-    # (self) reference to the blueprint of def buyComp
-
-    def comp_buy(self, comp_description, serial, year, comp_memory, comp_pt, comp_hdc, comp_os, comp_price): #when someone comes to buy a computer they need to tell you this info. You can pass in the price and every computer has the same price or look at refurbish code
+    def comp_buy(self, comp_description, serial, year, comp_memory, comp_pt, comp_hdc, comp_os, comp_price): #when someone comes to buy a computer they need to tell you this info
         c = Computer (comp_description, serial, year, comp_memory, comp_pt, comp_hdc, comp_os, comp_price) #passing parameters into to the Computer constructor (class) pasing it into the system to store in the inventory
         self.inventory.append(c)
+    
+    #Takes in an c, removes the associated computer if it is the inventory, prints error message otherwise
 
     def comp_sell(self, c:Computer):
         if c in self.inventory:
@@ -28,14 +30,17 @@ class ResaleShop:
             print("Item", c, "sold!")
         else: print("Item", c,"not found in inventory. Please select another item to sell.")
 
+    #Prints all the items in the inventory (if it isn't empty), prints error otherwise
+
     def print_inventory(self):
         if not self.inventory:
             print("No inventory to display") 
         else:
             for c in self.inventory:
-                c.print_details()
+                c.print_details() #prints the details of the inventory
                 print()
-        
+
+    #This refurbishes the computer. If the computer is in the inventory, the year of the computer determines the price. If not in inventory prints error
 
     def comp_refurbish(self, c:Computer, new_os):
         if c in self.inventory:
@@ -56,11 +61,12 @@ class ResaleShop:
             print("Item", self.inventory[0].description, "not found. Please select another item to refurbish.")
 
   
+#Executes the methods from above
 def main():
 
+    #Create the store
     my_store = ResaleShop()
     
-
     # Print a little banner
     print("-" * 21)
     print("COMPUTER RESALE STORE")
@@ -91,7 +97,6 @@ def main():
     #Now, let's sell it!
     my_store.comp_sell(my_store.inventory[0])
     my_store.print_inventory()
-
 
     # Make sure it worked by checking inventory
     print("Checking inventory...")
