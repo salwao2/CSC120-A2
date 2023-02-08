@@ -1,3 +1,9 @@
 Use this file to record your reflection on this assignment. 
 
 What worked, what didn't, what advice would you give someone taking this course in the future?
+
+What worked - Ultimately, I got my Resale Shop to work perfectly with no errors and all the intended methods (buy, sell, print inventory and details, refurbish). I am proud that I got it to function and execute exactly what I wanted and how I wanted it to appear with no error messages or crashing.
+
+What didn't work = Despite my Resale Shop working now, I struggled to get it to this place. I was quite lost while working on this assignment and spent a lot of time staring at my code for hours trying to figure out what was wrong. I think next time I start and assingment I will ask for help sooner when I'm stuck instead of wasting time staring at the code praying that it will magically work.
+
+Advice - I would advise students to go to office hours and to TA hours to get help. Doing this really helped me. I went to office hours twice and TA hours once and I got a lot of support in not only completeing this assignment, but also understanding where I went wrong and why the correct code makes sense. I would also advise at least looking at the assingment the first day it's assigned and seeing what the task is. I think I waited a day or two before starting the assignment and realized I had a lot ahead of me. I think especially since assignment 1 was quite easy, I did not expect A2 to take me so long to complete. I would also advise that the first day you look at the assignment to try writing some pseudo-code. I didn't write pseudo-code my first time around, but I plan to do so for the next assignment. I can see this being useful in understading what it is you even want the code to do.

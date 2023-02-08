@@ -1,12 +1,10 @@
 
-    #Class
-
-    #This class is for the computer
+#Class
+#This class is for the computer
 
 class Computer:
 
     #Attributes
-
     #Attributes for the computer
 
     description: str
@@ -20,7 +18,6 @@ class Computer:
 
 
     #Constructor
-
     #The constructor for the computer
 
     def __init__(self, comp_description, serial, year, comp_memory, comp_pt, comp_hdc, comp_os, comp_price) -> None:
@@ -35,7 +32,6 @@ class Computer:
 
 
     #Methods
-
     #This includes all the details about the computer, which is called in the resale shop in the print_inventory method
 
     def print_details(self):
