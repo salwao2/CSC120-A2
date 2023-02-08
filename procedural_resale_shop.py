@@ -14,6 +14,7 @@ from typing import Dict, Union, Optional
 """ inventory: a dictionary where we'll store our inventory
     The key is an int representing the item number
     The value is another dictionary containing information about the machine
+    
 """
 inventory : Dict[int, Dict[str, Union[str, int, bool]]] = {}
 
@@ -59,7 +60,7 @@ def print_inventory():
     if inventory:
         # For each item
         for item_id in inventory:
-            # Print its details
+            # Print its details2
             print(f'Item ID: {item_id} : {inventory[item_id]}')
     else:
         print("No inventory to display.")
